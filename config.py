@@ -1,23 +1,11 @@
 """
 Central configuration for the Obesity Classification project.
-All paths, constants, and shared settings live here.
 """
-
-from pathlib import Path
-
-# ── Paths ──────────────────────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parent
-DATA_RAW = PROJECT_ROOT / "data" / "raw"
-DATA_PROCESSED = PROJECT_ROOT / "data" / "processed"
-MODELS_DIR = PROJECT_ROOT / "models" / "saved"
-FIGURES_DIR = PROJECT_ROOT / "figures"
-
-RAW_FILE = DATA_RAW / "ObesityDataSet_raw_and_data_sinthetic.xlsx"
 
 # ── Dataset ────────────────────────────────────────────────────────────
 TARGET = "NObeyesdad"
 
-# Ordered from lightest to heaviest for ordinal encoding of the target
+# Ordered from lightest to heaviest
 TARGET_CLASSES = [
     "Insufficient_Weight",
     "Normal_Weight",

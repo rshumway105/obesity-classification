@@ -20,23 +20,18 @@ The goal is to identify which lifestyle and physical factors are most predictive
 
 ```
 ├── data/
-│   ├── raw/                        # Original dataset (not tracked by git)
-│   └── processed/                  # Cleaned/encoded data (not tracked)
+│   └── raw/                        # Original dataset (not tracked by git)
 ├── notebooks/
 │   ├── 01_eda.ipynb                # Exploratory data analysis
 │   ├── 02_preprocessing.ipynb      # Encoding, scaling, train/test split
 │   ├── 03_modeling.ipynb           # Model training and comparison
 │   └── 04_results.ipynb            # Final results, plots, and tables
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py              # Load and validate the dataset
-│   ├── preprocessing.py            # Encoding, scaling, splitting utilities
-│   ├── models.py                   # Model definitions and training
-│   └── evaluation.py               # Metrics, confusion matrices, CV
-├── models/
-│   └── saved/                      # Saved model artifacts (not tracked)
-├── figures/                        # Exported plots for the report/slides
-├── config.py                       # Central project configuration
+├── figures/
+│   ├── 01-EDA/                     # Plots from exploratory data analysis
+│   ├── 02-Preprocessing/           # Plots from preprocessing
+│   ├── 03-Modeling/                # Plots from modeling
+│   └── 04-Results/                 # Final result figures
+├── config.py                       # Dataset constants and modeling settings
 ├── requirements.txt
 └── README.md
 ```

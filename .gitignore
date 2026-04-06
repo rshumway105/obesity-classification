@@ -1,45 +1,25 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
 
 # Virtual environments
 venv/
 env/
 .env/
 
-# Jupyter Notebook checkpoints
+# Jupyter
 .ipynb_checkpoints/
 
-# IDE settings
+# IDE
 .vscode/
 .idea/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# Data files — keep only small samples in repo
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Data (download separately from UCI)
+data/
 
-# Model artifacts (can be large)
-models/saved/*
-!models/saved/.gitkeep
-
-# Logs and outputs
-logs/
-*.log
-
-# Environment variables / secrets
+# Secrets
 .env
-.env.local
-*.pem
-*.key
