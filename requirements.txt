@@ -10,6 +10,7 @@ seaborn
 
 # Machine Learning
 scikit-learn
+xgboost
 
 # Jupyter
 jupyter
